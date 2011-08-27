@@ -1,5 +1,6 @@
 ''' dAmnViper.dA.oauth module
-    Created by photofroggy.
+    Copyright (c) 2011, Henry "photofroggy" Rapley.
+    Released under the ISC License.
     
     This module provides objects which can be used to authorize applications
     with deviantart.com's oAuth API. Note that this product is in no way
@@ -146,7 +147,7 @@ class APIClient(object):
         # Start serving requests.
         d = client.serve()
         # Defer the handling or whatever.
-        d.addCallbacks(self._authResponse, self._authResponse)
+        d.addCallbacks(self._authResponse)
         # Make a deferred to be used externally.
         self._authd = defer.Deferred()
         return self._authd

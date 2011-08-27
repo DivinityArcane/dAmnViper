@@ -1,5 +1,6 @@
 ''' dAmnViper.base module
-    Created by photofroggy.
+    Copyright (c) 2011, Henry "photofroggy" Rapley.
+    Released under the ISC License.
     
     This module provides the dAmnClient class, which acts as an API for
     connecting to and interacting with deviantART.com's chatrooms. This is
@@ -154,7 +155,8 @@ class IChatClient(object):
 class ChatClient(IChatClient):
     """ This class is a client for llama-like chat servers.
         
-        The llama project can be seen here:
+        The llama project can be seen here::
+        
             http://code.google.com/p/project-llama-server/
             http://llamaserver.blogspot.com/
         
@@ -169,8 +171,8 @@ class ChatClient(IChatClient):
         name = 'dAmn Viper'
         version = 3
         state = 'Beta'
-        build = 57
-        stamp = '31072011-192229'
+        build = 58
+        stamp = '27082011-022134'
         series = 'Twister'
         author = 'photofroggy'
     
